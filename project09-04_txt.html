@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+   <meta charset="utf-8" />
+   <title>Eight Puzzle</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="library.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Game
+      </h1>
+   </header>
+
+   <section>
+      <h1>Sliding Puzzle</h1>
+      <p id="intro">
+         Organize the blocks systematically, aligning them in numerical order from 1 to 8. Employ precise selections, directing a chosen block to occupy the adjacent empty space. Commence the activity by engaging the 'Start' button, initiating the randomized arrangement of blocks and the activation of the timer. Your most proficient completion time will be prominently showcased beneath the interface, serving as a benchmark for your performance.
+      </p>
+      
+      <div id="slidingBlocks">
+         <div id="block1" class="block r1 c1"><img src="block1.jpg" alt="1" /></div>
+         <div id="block2" class="block r1 c2"><img src="block2.jpg" alt="2" /></div>
+         <div id="block3" class="block r1 c3"><img src="block3.jpg" alt="3" /></div> 
+         <div id="block4" class="block r2 c1"><img src="block4.jpg" alt="4" /></div> 
+         <div id="block5" class="block r2 c2"><img src="block5.jpg" alt="5" /></div>
+         <div id="block6" class="block r2 c3"><img src="block6.jpg" alt="6" /></div>
+         <div id="block7" class="block r3 c1"><img src="block7.jpg" alt="7" /></div> 
+         <div id="block8" class="block r3 c2"><img src="block8.jpg" alt="8" /></div>   
+         <div id="block0" class="block r3 c3"><img src="block0.jpg" alt="0" /></div>         
+      </div>
+      
+      <div id="controls">
+         <input type="button" id="Start" value="Start" />
+         <input type="text" id="timer" value="0" />
+      </div> 
+      
+      <p id="record">
+         Your top performance has  <span id="best"> not been recorded yet. </span>
+      </p>
+   </section>
+</body>
+</html>
